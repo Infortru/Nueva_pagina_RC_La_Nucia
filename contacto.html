@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Nueva página para RC La Nucía</title>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <script type="text/javascript" src="JSRelojNuevaRC.js"></script>
+        
+    </head>
+
+    <body>
+        <header>
+            <img id="logotipoNegro" src="Imágenes/logotiponegro.png">
+            <!--Menú de opciones-->
+            <ul id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="informacion.html">+Info</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="tutoriales.html">Tutoriales</a></li>
+            </ul>
+        </header>
+        <section>
+            <p>Puedes ponerte en contacto con nosotros a través de:</p>
+            <ul>
+                <li>E-mail:<a href="mailto:info@rcnucia.com?subject=Información">info@rcnucia.com</a></li><br/>
+                <li>Teléfono o whatsapp:</li>
+                <ul>
+                    <li>José Luis Picón:629 80 76 22</li>
+                    <li>Joan Espasa: 633 55 32 84</li>
+                    <li>Ramón Trujillo:639 79 26 19</li>
+                </ul>
+                <li>Puedes visitar nuestra página de <a href="http://facebook.com/Club-RC-La-Nucia-109917694919182">Facebook</a></li><br/>
+                <li>O rellenando el siguiente formulario de información:</li>
+            </ul>
+            <!--Formulario-->
+                    
+                <form action="recontacto.php" method="post" charset="utf-8">
+                    <b><span id="forinf">Formulario de información</span></b>
+                    <fieldset>
+                        <legend><b>Datos personales</b></legend>
+                        Nombre:<input type="text" name="nombre" span class="rojo" size="28" autofocus required
+                        placeholder="Su nombre" title="Escriba su nombre para poder referirnos a usted correctamente"/><br/>
+                        e-mail:<input type="email" name="mail" size="28" required placeholder="nombre@servidor.com" title="Escriba su correo electrónico para poder comunicarnos con Ud. lo antes posible"/><br/>
+                        Teléfono:<input type="number" name="telefono" required />
+                    </fieldset>
+                    <fieldset><textarea cols="40" rows="8" name="comentarios" placeholder="Comentarios"></textarea></textarea></fieldset>
+                        <input id="boton_enviar" type="submit" value="Enviar"/>
+                        <input id="boton_reset" type="reset" value="Limpiar"/>		
+                </form>
+                    
+                <!--Formulario para darse de alta como socios-->
+                <form action="subscribirse.php" method="post" charset="utf-8">
+                    <b><span id="formu">Formulario de alta para ser socio del Club RC La Nucía</span></b>
+                    <fieldset>
+                        <legend><b>Datos personales</b></legend>
+                        Nombre:<input type="text" name="nombresubs" size="20" required><br/>
+                        Apellidos:<input type="text" name="apellidossubs" size="25" required><br/>
+                        DNI/NIE:<input type="text" name="dnisubs" size="6" required>
+                        F. Nac.:<input type="date" name="nacisubs" size="5" required><br/>
+                        Teléfono:<input type="number" name="telefonosubs" size="4" required min="600000000" max="800000000">
+                        e-mail:<input type="email" name="emailsubs" size="25" required><br/>
+                        Dirección:<input type="text" name="direccionsubs" size="35" required><br/>
+                        C.P.:<input type="number" name="cpsubs" size="5" required min="03000" max="03999">
+                        Población:<input type="text" name="poblacionsubs" size="25" required><br/>
+                    </fieldset>
+                    <fieldset>
+                        <legend><b>Otros datos</b></legend>
+                        ¿Tienes licencia de AECAR?
+                        <input type="radio" name="licenciasubs" value="si" required>Si</input>
+                        Número:<input type="number" name="numerosubs" size="5"></input>
+                        <input type="radio" name="licenciasubs" value="no">No</input><br/>
+                    </fieldset>
+                    Debes realizar un ingreso de 30€ (20€ de depósito por la llave + 10€ mes actual).<br/>
+                    IBAN para el ingreso: ES98 3105 2644 1327 2000 7064.<br/>
+                    Aparte si no tienes licencia de AECAR hay que solicitarla, depende si quieres una licencia solo para rodar 30€ o para competir 50€.<br/>
+                    Cuando te entreguemos la llave deberás tener el justificante del ingreso.
+                    <br/><br/>
+                    <input id="boton_enviar" type="submit" value="Enviar"/>
+                    <input id="boton_reset" type="reset" value="Limpiar"/>
+                </form>
+            </section>
+            <aside>
+                <ul>
+                    <li id="fecha"></li>
+                    <li id="reloj"></li>
+                </ul>
+            </aside>
+            <footer>
+                <div class="pieizquierda">
+                    email:<a href="mailto:info@rcnucia.com?subject=información">info@rcnucia.com</a><br/>
+                    &copy Club RC La Nucía<br/>
+                    <a href="aviso.html">Aviso legal</a><br/>
+                </div>
+                <div class="piecentro">
+                    Club RC La Nucía<br/>
+                    Pda. La Muixara<br/>
+                    <a href="https://www.ciudaddeportivacamilocano.com" target="_blank">Ciudad Deportiva Camilo Cano</a><br/>
+                    03530 La Nucía (Alicante)<br/>
+                </div>
+                <div class="piederecha">
+                    Webmaster:<a href="mailto:ramontrujillo@rcnucia.com">ramontrujillo@rcnucia.com</a><br/>
+                </div>
+            </footer>
+    </body>
+</html>

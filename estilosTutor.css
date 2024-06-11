@@ -1,0 +1,19 @@
+/*Estos son los estilos para los tutoriales*/
+
+body {
+    background-color: antiquewhite;
+    text-indent: 5%;
+    font-size: 1.2rem;
+}
+h1, h2 {
+    text-align: center;
+}
+.partesDif {
+    width: 50%;
+    height: 200px;
+    margin: 25px;
+}
+ol, ul {
+    margin-left: 15px;
+    text-indent: 0px;
+}
